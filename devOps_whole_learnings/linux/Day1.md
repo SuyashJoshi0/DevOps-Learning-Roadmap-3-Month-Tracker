@@ -7,7 +7,7 @@
 * /etc → Configuration files
 * /var → Logs and variable data
 
-![File System](images/filesystem.png)
+![File System](images/linux_hierarchy.jpg)
 
 ---
 
