@@ -9,6 +9,9 @@
 
 ![File System](images/linux_hierarchy.jpg)
 
+### Also the use of each directory can be understood by the followinng image:
+
+![File System](images/Use_of_each_directory_in_Linux.jpg)
 ---
 
 ## 📂 Navigation Commands
