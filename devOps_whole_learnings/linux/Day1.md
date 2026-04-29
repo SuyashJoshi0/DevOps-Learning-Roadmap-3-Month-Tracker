@@ -11,7 +11,7 @@
 
 ### Also the use of each directory can be understood by the following image:
 
-![File System](images/Use_of_each_directory_in_Linux.jpg)
+![Use of Linux Directories](images/Use_of_ech_directory_in_Linux.jpg)
 ---
 
 ## 📂 Navigation Commands
