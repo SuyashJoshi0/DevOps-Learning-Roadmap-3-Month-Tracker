@@ -1,20 +1,110 @@
 # Extra commands and additional learnings will be posted here
 
-## Important concepts about path references
+## 📂 Important Concepts: Path References in Linux
 
-### Imagine you are currently in the directory /home/user/photos/ and you want to access a file named holiday.jpg located in the same folder.
-Using Absolute Path: ls /home/user/photos/holiday.jpg
-Using Relative Path: ls holiday.jpg or ls ./holiday.jpg
-If you wanted to go up one level to the user directory:
-Using Absolute Path: cd /home/user
-Using Relative Path: cd .. 
+Understanding **path references** is essential for navigating and managing files in Linux.
+
+---
+
+### 📌 What is a Path?
+
+A **path** defines the location of a file or directory in the Linux file system.
+
+There are two main types:
+
+* **Absolute Path**
+* **Relative Path**
+
+---
+
+## 🔹 Absolute Path
+
+An **absolute path** specifies the complete location of a file starting from the root directory `/`.
+
+### ✅ Example
+
+If your file is located at:
+
+```bash
+/home/user/photos/holiday.jpg
+```
+
+You can access it using:
+
+```bash
+ls /home/user/photos/holiday.jpg
+```
+---
+
+## 🔹 Relative Path
+
+A **relative path** specifies the location of a file based on your current directory.
+
+### ✅ Example
+
+If you are currently inside:
+
+```bash
+/home/user/photos/
+```
+
+You can access the file using:
+
+```bash
+ls holiday.jpg
+```
+
+or
+
+```bash
+ls ./holiday.jpg
+```
+---
+
+## 🔼 Navigating to Parent Directory
+
+To move one level up in the directory structure:
+
+### Using Absolute Path
+
+```bash
+cd /home/user
+```
+
+### Using Relative Path
+
+```bash
+cd ..
+```
+
+---
+
+# ⚡ Special Symbols in Paths
+
+| Symbol | Meaning           |
+| ------ | ----------------- |
+| `.`    | Current directory |
+| `..`   | Parent directory  |
+| `~`    | Home directory    |
+
+---
+
+## 🎯 Summary
+
+| Type              | Example                         | Use Case                  |
+| ----------------- | ------------------------------- | ------------------------- |
+| Absolute Path     | `/home/user/photos/holiday.jpg` | Access from anywhere      |
+| Relative Path     | `holiday.jpg`                   | When already in directory |
+| Parent Navigation | `cd ..`                         | Move up one level         |
+
+---
 
 # 🚀 DevOps Learning Tracker - Upcoming Changes
 
 ## 📌 Immediate Tasks (This Week)
-- [ ] Fix image path issue in Linux notes
-- [ ] Restructure repo folders
-- [ ] Add GitHub setup documentation (SSH, clone, push)
+- [*] Fix image path issue in Linux notes
+- [*] Restructure repo folders
+- [*] Add GitHub setup documentation (SSH, clone, push)
 
 ## ⚙️ Linux Improvements
 - [ ] Descriptive command for copy and grep
