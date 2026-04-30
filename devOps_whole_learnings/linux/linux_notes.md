@@ -102,9 +102,9 @@ cd ..
 # 🚀 DevOps Learning Tracker - Upcoming Changes
 
 ## 📌 Immediate Tasks (This Week)
-- [ * ] Fix image path issue in Linux notes
-- [ * ] Restructure repo folders
-- [ * ] Add GitHub setup documentation (SSH, clone, push)
+- [x] Fix image path issue in Linux notes
+- [x] Restructure repo folders
+- [x] Add GitHub setup documentation (SSH, clone, push)
 
 ## ⚙️ Linux Improvements
 - [ ] Descriptive command for copy and grep
