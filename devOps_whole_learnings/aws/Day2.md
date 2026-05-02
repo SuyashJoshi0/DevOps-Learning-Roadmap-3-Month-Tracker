@@ -35,10 +35,14 @@ An **instance type** defines the hardware configuration of your EC2 instance.
 - Network performance
 
 ### Categories:
-- **General Purpose** (t2, t3)
-- **Compute Optimized** (c5)
-- **Memory Optimized** (r5)
-- **Storage Optimized** (i3)
+- **General Purpose** (t2, t3):
+	Web servers, small databases, development/test environments, CI/CD pipelines.
+- **Compute Optimized** (c5):
+	High-performance web servers, scientific modeling, batch processing, gaming servers, machine learning inference.
+- **Memory Optimized** (r5):
+	 High-performance relational databases (SQL/NoSQL), in-memory caches (Redis/Memcached), big data analytics (Spark/Hadoop).
+- **Storage Optimized** (i3):
+	 NoSQL databases (Cassandra/MongoDB), data warehousing, high-throughput distributed file systems, log processing.
 
 ### Example:
 - Small app → `t2.micro`
