@@ -62,3 +62,60 @@ A **key pair** is used for secure login to EC2 instances.
 ### Example:
 ```bash
 ssh -i mykey.pem ubuntu@<public-ip>
+
+---
+
+## 4. Security Groups
+
+A security group acts as a virtual firewall for EC2.
+
+###Controls:
+- **Inbound traffic**
+- **Outbound traffic**
+- **Common Rules:
+- **SSH → Port 22
+- **HTTP → Port 80**
+- **HTTPS → Port 443**
+
+### Example:
+
+If port 22 is not allowed → SSH access will fail
+
+---
+
+## 5. Elastic IP (EIP)
+
+An Elastic IP is a static public IP address.
+
+## Key Points:
+- **Default public IP changes on restart**
+- **Elastic IP remains constant**
+
+###Use Cases:
+- **Hosting websites**
+- **DNS mapping**
+- **Avoid downtime**
+
+Note:
+
+AWS charges for unused Elastic IPs
+
+---
+
+##User Data
+
+User Data is a script that runs automatically during instance launch.
+
+###Use Cases:
+- **Install software**
+- **Configure services**
+- **Automate setup**
+
+###Example:
+```bash
+#!/bin/bash
+apt update
+apt install -y apache2
+systemctl start apache2
+
+---
