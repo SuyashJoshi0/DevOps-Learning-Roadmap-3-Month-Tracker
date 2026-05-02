@@ -62,7 +62,7 @@ A **key pair** is used for secure login to EC2 instances.
 ### Example:
 ```bash
 ssh -i mykey.pem ubuntu@<public-ip>
-
+```
 ---
 
 ## 4. Security Groups
