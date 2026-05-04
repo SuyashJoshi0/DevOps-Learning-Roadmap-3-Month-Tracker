@@ -153,6 +153,37 @@ Grant only the permissions required to perform a task.
 - MFA → Secures access
 - Access Keys → Enable CLI/API usage
 
+
+## About Action and Resource
+
+A Resource is the target on which an action is allowed or denied.
+
+👉 Think of it like:
+
+- Action → What you can do
+- Resource → Where you can do it
+
+### Example:
+~~~json
+{
+  "Effect": "Allow",
+  "Action": "s3:GetObject",
+  "Resource": "arn:aws:s3:::my-bucket/*"
+}
+~~~
+
+### Explanation:
+- Action → Read objects
+- Resource → Only inside my-bucket
+- Effect → Permission is allowed
+
+### 🧠 What is ARN (Amazon Resource Name)?
+Resources are defined using ARN (Amazon Resource Name).
+
+- Format
+```bash
+arn:partition:service:region:account-id:resource
+```
 ---
 
 ## Best Practices
