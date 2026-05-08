@@ -3,6 +3,25 @@
 This document contains the basic Docker operations performed on Ubuntu (WSL), including running containers, accessing them, and troubleshooting common mistakes.
 
 ---
+## What is Docker
+
+- Docker is a tool that allows developers to "package" an application and everything it needs to run (like libraries, settings, and dependencies) into a single unit called a container.
+- The most famous problem Docker solves is the "it works on my machine" headache. By using Docker, you ensure that if the app works on your laptop, it will work exactly the same on your teammate's computer, a testing server, or a cloud platform like AWS or Azure.
+
+
+### 📚 Key Concepts to Know
+
+| Term        | What it is |
+|------------|-----------|
+| Dockerfile | A text file with instructions on how to build your environment. |
+| Image      | A blueprint or snapshot created from your Dockerfile. It is a read-only file. |
+| Container  | A live, running instance of an image where your code actually executes. |
+| Docker Hub | An online library to download pre-built images like databases (MySQL, MongoDB) or web servers (Nginx). |
+
+
+### Nginx
+- In a Docker environment, Nginx acts as the high-performance traffic controller for your containerized applications. 
+- While Nginx is a web server at its core, it is most commonly used in Docker to manage how users and other containers access your services.
 
 ## 📌 1. Verify Docker Installation
 
